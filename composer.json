@@ -1,8 +1,8 @@
 {
     "name": "monogramm/proxmox-bundle",
     "type": "symfony-bundle",
-    "description": "ProxmoxVE API integration",
-    "keywords": ["proxmox", "api", "sdk"],
+    "description": "ProxmoxVE API integration in Symfony",
+    "keywords": ["proxmox", "api", "symfony", "bundle"],
     "homepage": "http://www.monogramm.io",
     "license": "AGPL-3.0-or-later",
     "authors": [
