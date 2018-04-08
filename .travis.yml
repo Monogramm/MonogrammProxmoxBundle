@@ -29,8 +29,8 @@ before_script:
 script:
   - mkdir .reports
   # Code style
-  - vendor/bin/phpcs ./src/ --standard=PSR1 --encoding=utf-8 --report=summary
-  - vendor/bin/phpcs ./src/ --standard=PSR2 --encoding=utf-8 --report=summary
+  - php vendor/bin/phpcs ./DependencyInjection/ --standard=PSR1 --encoding=utf-8 --report=summary
+  - php vendor/bin/phpcs ./DependencyInjection/ --standard=PSR2 --encoding=utf-8 --report=summary
   # PHPSpec specs
   - vendor/bin/phpspec run
 
