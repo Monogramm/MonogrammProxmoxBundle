@@ -23,7 +23,6 @@
     },
     "require-dev": {
         "phpspec/phpspec": "~2.1",
-        "henrikbjorn/phpspec-code-coverage": "~2.0",
-        "php-coveralls/php-coveralls": "~2.0"
+        "leanphp/phpspec-code-coverage": "~2.1"
     }
 }

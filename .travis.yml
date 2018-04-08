@@ -25,5 +25,3 @@ before_script:
   - if [ "$TRAVIS_PHP_VERSION" = "hhvm" -o "$TRAVIS_PHP_VERSION" = "hhvm-nightly" ]; then rm phpspec.yml; fi
 
 script: vendor/bin/phpspec run
-
-after_script: sh -c 'if [ "$TRAVIS_PHP_VERSION" != "hhvm" -a "$TRAVIS_PHP_VERSION" != "hhvm-nightly" ]; then vendor/bin/php-coveralls -v; fi;'
