@@ -4,7 +4,7 @@
     "description": "ProxmoxVE API integration",
     "keywords": ["proxmox", "api", "sdk"],
     "homepage": "http://www.monogramm.io",
-    "license": "AGPL-3.0",
+    "license": "AGPL-3.0-or-later",
     "authors": [
         {
             "name": "Monogramm",
