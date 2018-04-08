@@ -1,8 +1,8 @@
 <?php
 
 namespace spec\Monogramm\ProxmoxBundle\DependencyInjection;
+
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 
 /**
  * Configuration Spec.

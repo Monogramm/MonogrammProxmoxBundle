@@ -1,8 +1,8 @@
 <?php
 
 namespace spec\Monogramm\ProxmoxBundle;
+
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 
 /**
  * MonogrammProxmoxBundle Spec.
