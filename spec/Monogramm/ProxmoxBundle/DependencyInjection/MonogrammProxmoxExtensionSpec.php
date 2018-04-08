@@ -1,6 +1,7 @@
 <?php
 
 namespace spec\Monogramm\ProxmoxBundle\DependencyInjection;
+
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -25,15 +26,17 @@ class MonogrammProxmoxExtensionSpec extends ObjectBehavior
 
     function it_loads(ContainerBuilder $container)
     {
+
         $container->setParameter('monogramm_proxmox.hostname', self::HOSTNAME)->shouldBeCalled();
         $container->setParameter('monogramm_proxmox.username', self::USERNAME)->shouldBeCalled();
         $container->setParameter('monogramm_proxmox.password', self::PASSWORD)->shouldBeCalled();
         $container->setParameter('monogramm_proxmox.realm', self::REALM)->shouldBeCalled();
         $container->setParameter('monogramm_proxmox.port', self::PORT)->shouldBeCalled();
-        $container->hasExtension('http://symfony.com/schema/dic/services')->shouldBeCalled();
-        $container->addResource(Argument::type('Symfony\Component\Config\Resource\FileResource'))->shouldBeCalled();
+
+        $container->fileExists(Argument::any())->shouldBeCalled();
         $container->setDefinition('monogramm_proxmox.api', Argument::type('Symfony\Component\DependencyInjection\Definition'))->shouldBeCalled();
         $container->setAlias('proxmox', Argument::type('Symfony\Component\DependencyInjection\Alias'))->shouldBeCalled();
+
         $configs = array(
             array(
                 'hostname' => self::HOSTNAME,
@@ -43,6 +46,7 @@ class MonogrammProxmoxExtensionSpec extends ObjectBehavior
                 'port' => self::PORT,
             )
         );
+
         $this->load($configs, $container);
     }
 }
