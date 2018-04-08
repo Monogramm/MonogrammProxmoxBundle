@@ -1,0 +1,16 @@
+parameters:
+    proxmox_credentials: 
+        hostname: "%monogramm_proxmox.hostname%"
+        username: "%monogramm_proxmox.username%"
+        password: "%monogramm_proxmox.password%"
+        realm: "%monogramm_proxmox.realm%"
+        port: "%monogramm_proxmox.port%"
+
+services:
+    monogramm_proxmox.api:
+        class: ProxmoxVE\Proxmox
+        arguments: 
+            - '%proxmox_credentials%'
+
+    proxmox:
+        alias: monogramm_proxmox.api

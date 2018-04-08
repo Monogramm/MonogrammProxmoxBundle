@@ -1,0 +1,29 @@
+{
+    "name": "monogramm/proxmox-bundle",
+    "type": "symfony-bundle",
+    "description": "ProxmoxVE API integration",
+    "keywords": ["proxmox", "api", "sdk"],
+    "homepage": "http://www.monogramm.io",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Monogramm",
+            "homepage": "https://github.com/Monogramm"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "symfony/dependency-injection" : "~2.3|~3.0",
+        "symfony/config" : "~2.3|~3.0",
+        "symfony/http-kernel": "~2.3|~3.0",
+        "zzantares/proxmoxve": "dev-guzzle6"
+    },
+    "autoload": {
+        "psr-4": { "Monogramm\\ProxmoxBundle\\": "" }
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~3.0",
+        "henrikbjorn/phpspec-code-coverage": "~3.0",
+        "phpdocumentor/reflection-docblock": "^3.0|^4.0"
+    }
+}
