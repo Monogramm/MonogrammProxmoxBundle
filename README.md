@@ -2,7 +2,9 @@
 
 This bundle integrates [ZzAntares Proxmox's unoffical PHP client](https://github.com/ZzAntares/ProxmoxVE) in [the Symfony framework](http://symfony.com).
 
-[![Build Status](https://travis-ci.org/Monogramm/MonogrammProxmoxBundle.svg)](https://travis-ci.org/Monogramm/MonogrammProxmoxBundle) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Monogramm/MonogrammProxmoxBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Monogramm/MonogrammProxmoxBundle/?branch=master) 
+[![Build Status](https://travis-ci.org/Monogramm/MonogrammProxmoxBundle.svg)](https://travis-ci.org/Monogramm/MonogrammProxmoxBundle)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Monogramm/MonogrammProxmoxBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Monogramm/MonogrammProxmoxBundle/?branch=master) 
+[![Latest version](https://img.shields.io/packagist/v/monogramm/proxmox-bundle.svg?style=flat)](https://packagist.org/packages/monogramm/proxmox-bundle)
 
 ## Installation
 
