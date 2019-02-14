@@ -100,3 +100,13 @@ License
 -------
 
 See [LICENSE](LICENSE) file.
+
+Author(s)
+------------
+
+* [Monogramm](https://github.com/Monogramm)
+
+Awesome Contributors
+------------
+
+* [GothShoot](https://github.com/GothShoot)

@@ -13,10 +13,10 @@
     ],
     "require": {
         "php": ">=5.5",
-        "symfony/dependency-injection" : "~2.3|~3.0",
-        "symfony/config" : "~2.3|~3.0",
-        "symfony/http-kernel": "~2.3|~3.0",
-        "zzantares/proxmoxve": "dev-guzzle6"
+        "symfony/dependency-injection" : ">=2.3 <4.1.4",
+        "symfony/config" : ">=2.3 <4.1.4",
+        "symfony/http-kernel": ">=2.3 <4.1.4",
+        "zzantares/proxmoxve": "4.0.0"
     },
     "autoload": {
         "psr-4": { "Monogramm\\ProxmoxBundle\\": "" }
